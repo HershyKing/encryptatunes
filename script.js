@@ -10,6 +10,12 @@ function playNote(inputValue) {
       MIDI.setVolume(0,120);
       MIDI.noteOn(0, note, velocity, delay);
       MIDI.noteOff(0, note, delay + 0.50);
+      keyToNote(note);
     }
   });
+}
+
+//Take inputted value and convert to musical note to write later
+function keyToNote(note) {
+  
 }
