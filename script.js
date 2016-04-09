@@ -1,6 +1,7 @@
 //Play musical note based on inputted value
 function playNote(inputValue) {
   MIDI.loadPlugin({
+    soundfonturl: "./soundfont/",
     instrument: "acoustic_grand_piano",
     onsuccess: function(){
       var delay = 0;
